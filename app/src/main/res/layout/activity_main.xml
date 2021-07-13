@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/virus_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/score"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tap_to_start"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/human"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/human"
+            android:src="@drawable/human" />
+
+        <ImageView
+            android:id="@+id/vaccine"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/vaccine"
+            android:src="@drawable/vaccine" />
+
+        <ImageView
+            android:id="@+id/virus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/virus"
+            android:src="@drawable/virus" />
+
+        <ImageView
+            android:id="@+id/mask"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/mask"
+            android:src="@drawable/mask" />
+    </FrameLayout>
+
+
+</LinearLayout>
